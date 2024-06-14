@@ -25,6 +25,9 @@ const url = process.env.URL || null;
 
 
 //userRoute
+app.get("/" , (req, res) =>{
+    res.send("This is home route")
+})
 app.use("/user", userRouter);
 
 //compilerRoute
