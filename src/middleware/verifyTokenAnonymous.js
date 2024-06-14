@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken"
 
-const verifyTokenAnonymous = async (res, res, next) =>{
+const verifyTokenAnonymous = async (req, res, next) =>{
     const token = req.cookies.token;
 
     if(!token) {

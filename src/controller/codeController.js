@@ -1,5 +1,5 @@
-import { codeModel } from "../model/codeModel";
-import { userModel } from "../model/userModel";
+import { codeModel } from "../model/codeModel.js";
+import { userModel } from "../model/userModel.js";
 
 
 export const saveCode = async (req, res) => {
@@ -167,4 +167,5 @@ export const getAllCodes = async (req, res) => {
 
     }
 }
+
 

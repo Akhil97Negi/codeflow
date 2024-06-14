@@ -1,4 +1,5 @@
 import { Schema, model } from "mongoose";
+import mongoose from "mongoose";
 
 const CodeSchema = new Schema(
   {
@@ -14,6 +15,7 @@ const CodeSchema = new Schema(
   { timestamps: true }
 );
 
-export const codeModel = mongoose.model("Code", CodeSchema);
+export const codeModel = model("Code", CodeSchema);
+
 
 
