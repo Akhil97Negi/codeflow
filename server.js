@@ -17,7 +17,7 @@ app.use(cors ({
     credentials : true
 }))
 
-app.use(cors());
+// app.use(cors());
 
 const port =  4000;
 const url = process.env.URL || null;
