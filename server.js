@@ -1,12 +1,11 @@
 import express from 'express'
 import { config } from 'dotenv'
-// import connectToDB from './src/config/db.js';
 import { userRouter } from './src/routes/userRouter.js';
 import cors from 'cors'
 import cookieParser from 'cookie-parser';
 import { compilerRouter } from './src/routes/compilerRouter.js';
 import connectToDB from './src/config/db.js';
-// import  compilerRouter  from './src/routes/compilerRouter.js';
+
 
 config();
 

@@ -1,7 +1,7 @@
 import { Router } from "express";
-import verifyTokenAnonymous from "../middleware/verifyTokenAnonymous.js";
-import { deleteCode, getAllCodes, loadCode, saveCode } from "../controller/codeController.js";
-import { verifyToken } from "../middleware/verifyToken.js";
+import verifyTokenAnonymous from "../middlewares/verifyTokenAnonymous.js";
+import { deleteCode, getAllCodes, loadCode, saveCode } from "../controller/compilerController.js";
+import { verifyToken } from "../middlewares/verifyToken.js";
 
 
 export const compilerRouter = Router();

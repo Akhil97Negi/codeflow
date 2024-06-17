@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import { userModel } from '../model/userModel.js';
+import { userModel } from '../models/userModel.js';
 
 
 
@@ -144,4 +144,6 @@ export const userDetails = async (req, res) => {
         return res.status(500).send({ message: "Cannot fetch user details" });
     }
 };
+
+
 

@@ -1,9 +1,9 @@
-import { codeModel } from "../model/codeModel.js";
-import { userModel } from "../model/userModel.js";
+import { codeModel } from "../models/codeModel.js";
+import { userModel } from "../models/userModel.js";
 
 
 export const saveCode = async (req, res) => {
-    const { fullCode, title } = req.title;
+    const { fullCode, title } = req.body;
 
     let ownerName = "";
     let user;
@@ -167,5 +167,4 @@ export const getAllCodes = async (req, res) => {
 
     }
 }
-
 
